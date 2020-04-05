@@ -1,0 +1,73 @@
+/* client/src/App.css */
+
+button {
+  margin: 10px;
+  background-color: #33cc33;
+  border-radius: 12px;
+}
+
+.albumArt {
+  width: 50px;
+}
+
+.playingArt {
+  width: 500px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.topImage {
+  height: 100px;
+  width: 100px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: relative;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  background-color: #4caf50;
+  color: white;
+  font-size: auto;
+  padding: 5px 10px;
+}
+
+.albumArt:hover .middle {
+  opacity: 1;
+}
+
+.playingArt:hover .middle {
+  opacity: 1;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+.playingArt:hover img {
+  opacity: 0.5;
+}
+
+.albumArt:hover {
+  -webkit-transition: 0.5s ease;
+  width: 150px;
+  height: auto;
+}
